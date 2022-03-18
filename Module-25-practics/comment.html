@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment</title>
+</head>
+<body>
+    <h1>add your comment, please </h1>
+  <div id="comment-container">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae totam facere iure beatae numquam, veniam laboriosam natus alias corporis, accusantium, ipsa dolores culpa. Doloremque doloribus magnam rem porro illum minus!</P>
+      <P>Obcaecati aperiam officia veniam ab fugit tempore dolore accusamus eius. Autem odio recusandae aut. Ipsa modi possimus, sunt minima impedit eaque, neque numquam eveniet consequatur iste distinctio et, voluptates quisquam!</P>
+      <P>Commodi facere aspernatur voluptatibus eveniet voluptatum iure corporis voluptas amet magni, quibusdam rem nostrum tempore, provident error non consequuntur dolor ullam natus accusamus incidunt assumenda quae eaque. At, qui praesentium!</P>
+  </div>
+
+
+  <div>
+      <p>Add your Commnet, please </p>
+
+      <textarea name="" id="new-comment" cols="60" rows="4"></textarea>
+      <br>
+      <button id="submite-comment">Post</button>
+  </div>
+
+
+
+
+
+
+  <script>
+
+      //1. Add button event handler
+      document.getElementById("submite-comment").addEventListener("click",function(){
+
+          //2. get user commnet 
+         const commentBox = document.getElementById("new-comment");
+         
+         //const userComment = commentBox.value;
+            
+        //3. create commnet paragraph
+
+        const newComment = document.createElement("p");
+        newComment.innerText =commentBox.value;
+
+        //4. append the comment 
+        const commentContainer = document.getElementById("comment-container")
+
+        commentContainer.appendChild(newComment);
+        
+        //5. clean the comment box
+
+        commentBox.value = "";
+      })
+      
+  </script>
+
+</body>
+</html>

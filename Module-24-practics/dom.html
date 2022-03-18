@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .blog{
+          
+            border: 2px solid rgb(238, 18, 231);
+            margin: 5px;
+            padding: 5px;
+            border-radius: 10px;
+            
+           
+        } */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to my blog</h1>
+    </header>
+    <main>
+        <section>
+            <article class="blog">
+                <h3>My Awesom Blog-1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis eveniet quaerat corrupti accusamus nihil fugiat, corporis labore consequatur non maiores vel, aspernatur, eius odio asperiores dolore! Dolorum, vero. Vel, velit?</p>
+            </article>
+            <article class ="blog">
+                <h3 id = "secondTitel">My Awesom Blog-2</h3>
+               
+                <p>Praesentium sapiente expedita saepe tempore? Ratione, quo? Iste quaerat, dolorem aliquam ut laborum aut, harum magnam deleniti alias dolores quisquam veniam unde pariatur distinctio, corporis blanditiis dolorum aspernatur. Aspernatur, non.</p>
+            </article>
+            <article class ="blog">
+                <h3 id = "thirdTitel">My Awesom Blog-3</h3>
+                <p>Perspiciatis facilis cupiditate assumenda ipsum quam? Earum, quia nostrum? Inventore nulla praesentium earum repellat. Cupiditate quasi odit, fugiat vel neque aut! Molestiae similique minima unde. Assumenda harum ducimus sed sit.</p>
+            </article> class ="blog"
+
+            <article class ="blog">
+                <h3>My Awesom Blog-4</h3>
+                <p>Perspiciatis facilis cupiditate assumenda ipsum quam? Earum, quia nostrum? Inventore nulla praesentium earum repellat. Cupiditate quasi odit, fugiat vel neque aut! Molestiae similique minima unde. Assumenda harum ducimus sed sit.</p>
+            </article>
+        </section>
+    </main>
+
+
+
+
+    <script>
+
+        //explore getElementByid
+
+         const secondTitel = document.getElementById("secondTitel");
+         secondTitel.style.textAlign = "center";
+         secondTitel.style.backgroundColor = "red";
+
+         const thirdTitel = document.getElementById("thirdTitel");
+         thirdTitel.innerText = "Title Updated by Javascript";
+         thirdTitel.style.backgroundColor = "red";
+         thirdTitel.style.padding = "20px";
+         thirdTitel.style.margin = "20ox";
+
+
+         //explore getElementsByName
+
+         const blogs = document.getElementsByClassName("blog");
+         for (const blog of blogs){
+            blog.style.border = "2px solid orange";
+            blog.style.borderRadius = "15px";
+         }
+
+
+        console.log(document);
+    </script>
+</body>
+</html>
